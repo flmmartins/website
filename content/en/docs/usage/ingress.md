@@ -85,6 +85,11 @@ trigger `Certificate` resources to be automatically created:
   returned.  This is useful for keeping compatibility with the `ingress-gce`
   component.
 
+## Generate multiple certificates with multiple ingresses
+
+If you need to generate certificates from multiple ingresses make sure it has the issuer annotation.
+Besides the annotation is necessary that each ingress posess a unique `tls.secretName`
+
 ## Optional Configuration
 
 The ingress-shim sub-component is deployed automatically as part of
